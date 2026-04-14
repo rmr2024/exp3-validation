@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 3 - Ticket Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Ticket Booking Validation</h1>
+    <form id="ticket-form" novalidate>
+      <label for="from">From</label>
+      <input id="from" name="from" required>
+      <span class="error" id="from-error"></span>
+
+      <label for="to">To</label>
+      <input id="to" name="to" required>
+      <span class="error" id="to-error"></span>
+
+      <label for="travelDate">Travel Date</label>
+      <input id="travelDate" type="date" name="travelDate" required>
+      <span class="error" id="date-error"></span>
+
+      <button type="submit">Validate Booking</button>
+    </form>
+  </main>
+  <script src="validation.js"></script>
+</body>
+</html>
